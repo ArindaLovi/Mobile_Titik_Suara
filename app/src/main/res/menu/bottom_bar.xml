@@ -4,14 +4,21 @@
     <item
         android:id="@+id/home"
         android:title="Home"
-        android:icon="@drawable/ic_home"/>
+        android:icon="@drawable/ic_home" />
 
     <item
         android:id="@+id/pengaduan"
         android:title="Pengaduan"
-        android:icon="@drawable/ic_pengaduan"/>
+        android:icon="@drawable/ic_pengaduan" />
+
+    <item
+        android:id="@+id/notif"
+        android:title="Notifikasi"
+        android:icon="@drawable/ic_notif" />
+
     <item
         android:id="@+id/profile"
         android:title="Profile"
-        android:icon="@drawable/ic_person"/>
+        android:icon="@drawable/ic_person" />
+
 </menu>

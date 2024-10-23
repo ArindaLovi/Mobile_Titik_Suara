@@ -11,7 +11,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.arin.titik_suara.Fragment.HomeFragment;
+import com.arin.titik_suara.Fragment.DashboardFragment;
+import com.arin.titik_suara.Fragment.NotifFragment;
 import com.arin.titik_suara.Fragment.PengaduanFragment;
 import com.arin.titik_suara.Fragment.ProfilFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -28,16 +29,20 @@ public class MainActivity extends AppCompatActivity {
         sharedPreferences = getSharedPreferences("user_data", Context.MODE_PRIVATE);
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
-        replace(new HomeFragment());
+        // Initial fragment when app starts
+        replace(new DashboardFragment());
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 if (item.getItemId() == R.id.home) {
-                    replace(new HomeFragment());
+                    replace(new DashboardFragment());
                     return true;
                 } else if (item.getItemId() == R.id.pengaduan) {
                     replace(new PengaduanFragment());
+                    return true;
+                } else if (item.getItemId() == R.id.notif) {
+                    replace(new NotifFragment());
                     return true;
                 } else if (item.getItemId() == R.id.profile) {
                     replace(new ProfilFragment());
@@ -50,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void replace(Fragment fragment) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_layout,fragment);
+        transaction.replace(R.id.frame_layout, fragment);
         transaction.commit();
     }
 
@@ -62,6 +67,5 @@ public class MainActivity extends AppCompatActivity {
         } else {
             super.onBackPressed();
         }
-
     }
 }
