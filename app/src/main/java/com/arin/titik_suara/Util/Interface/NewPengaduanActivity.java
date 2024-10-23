@@ -20,7 +20,7 @@ public class NewPengaduanActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_tambahpengaduan);
+        setContentView(R.layout.fragment_tambah_pengaduan_baru);
 
         // Menghubungkan view dengan variabel
         etTitle = findViewById(R.id.et_pengaduan_title);
