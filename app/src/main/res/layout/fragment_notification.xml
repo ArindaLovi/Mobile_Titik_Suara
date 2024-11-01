@@ -17,7 +17,7 @@
         android:layout_marginBottom="59dp"
         android:text="Notifikasi"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textSize="20dp" />
 
     <LinearLayout
         android:layout_width="match_parent"

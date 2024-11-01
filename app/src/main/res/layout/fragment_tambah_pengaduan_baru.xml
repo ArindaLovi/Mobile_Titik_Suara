@@ -9,24 +9,25 @@
     tools:context=".LoginActivity">
 
     <TextView
+        android:id="@+id/title1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19.50dp"
-        android:layout_marginTop="19.50dp"
-        android:layout_marginEnd="19.50dp"
-        android:layout_marginBottom="19.50dp"
-        android:fontFamily=""
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="59dp"
         android:text="Tambah Pengaduan"
         android:textColor="@color/black"
-        android:textSize="20sp"/>
+        android:textSize="20dp" />
 
+    <!-- Main Container for Profile Content -->
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="104.00dp"
-        android:background="@drawable/container_login"
+        android:layout_below="@id/title1"
         android:orientation="vertical"
-        android:padding="19.50dp">
+        android:background="@drawable/container_login"
+        android:padding="16dp">
 
         <ScrollView
             android:layout_width="match_parent"
