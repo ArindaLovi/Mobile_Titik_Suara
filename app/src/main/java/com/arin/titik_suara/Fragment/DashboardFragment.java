@@ -21,7 +21,7 @@ public class DashboardFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
 
         // Inisialisasi FloatingActionButton
-        FloatingActionButton fabTambahPengaduan = view.findViewById(R.id.fab_add);
+        FloatingActionButton fabTambahPengaduan = view.findViewById(R.id.fabAdd);
 
         // Set onClickListener untuk tombol tambah pengaduan
         fabTambahPengaduan.setOnClickListener(v -> {
