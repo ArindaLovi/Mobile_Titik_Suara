@@ -11,7 +11,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.arin.titik_suara.Fragment.HomeFragment;
+import com.arin.titik_suara.Fragment.DashboardFragment;
 import com.arin.titik_suara.Fragment.NotifFragment;
 import com.arin.titik_suara.Fragment.PengaduanFragment;
 import com.arin.titik_suara.Fragment.ProfilFragment;
@@ -30,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
         // Initial fragment when app starts
-        replace(new HomeFragment());
+        replace(new DashboardFragment());
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 if (item.getItemId() == R.id.home) {
-                    replace(new HomeFragment());
+                    replace(new DashboardFragment());
                     return true;
                 } else if (item.getItemId() == R.id.pengaduan) {
                     replace(new PengaduanFragment());
