@@ -6,6 +6,7 @@
     <color name="main">#EBB1B1</color>
     <color name="gray">#E1DFDF</color>
     <color name="green">#00FF00</color>
+    <color name="transparant">#D8000000</color>
     <color name="unread_notification">#FAE0E0</color> <!-- Light blue for unread notifications -->
     <color name="read_notification">#FFFFFF</color> <!-- White for read notifications -->
 </resources>
