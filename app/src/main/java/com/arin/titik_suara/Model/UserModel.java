@@ -8,6 +8,7 @@ public class UserModel {
     private String no_telepon;
     private String foto_profil;
 
+    // Constructor
     public UserModel(String id_user, String nama, String jabatan, String alamat, String no_telepon, String foto_profil) {
         this.id_user = id_user;
         this.nama = nama;
@@ -15,6 +16,10 @@ public class UserModel {
         this.alamat = alamat;
         this.no_telepon = no_telepon;
         this.foto_profil = foto_profil;
+    }
+
+    // Default Constructor
+    public UserModel() {
     }
 
     // Getter dan Setter

@@ -9,6 +9,6 @@ android:shape="rectangle">
         android:width="@dimen/_2sdp"
         android:color="@color/main"/>
     <solid
-        android:color="@color/gray"/>
+        android:color="@color/white"/>
 
 </shape>

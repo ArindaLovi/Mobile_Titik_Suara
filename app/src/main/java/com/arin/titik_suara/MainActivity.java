@@ -13,7 +13,7 @@ import android.view.MenuItem;
 
 import com.arin.titik_suara.Fragment.DashboardFragment;
 import com.arin.titik_suara.Fragment.NotifFragment;
-import com.arin.titik_suara.Fragment.PengaduanFragment;
+import com.arin.titik_suara.Fragment.allPengaduanFragment;
 import com.arin.titik_suara.Fragment.ProfilFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     replace(new DashboardFragment());
                     return true;
                 } else if (item.getItemId() == R.id.pengaduan) {
-                    replace(new PengaduanFragment());
+                    replace(new allPengaduanFragment());
                     return true;
                 } else if (item.getItemId() == R.id.notif) {
                     replace(new NotifFragment());

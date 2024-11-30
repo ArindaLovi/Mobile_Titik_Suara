@@ -30,6 +30,7 @@
                     android:textSize="@dimen/_9sdp"
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:text="Kategori Notifikasi"
+                    android:fontFamily="@font/popmed"
                     android:textStyle="bold" />
 
                 <TextView
@@ -39,8 +40,8 @@
                     android:textSize="@dimen/_9sdp"
                     android:maxLength="50"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/popmed"
                     android:text="Deskripsi singkat notifikasi akan ditampilkan di sini" />
-
             </LinearLayout>
 
             <TextView
@@ -50,9 +51,6 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:textSize="12sp"/>
-
         </RelativeLayout>
-
     </androidx.cardview.widget.CardView>
-
 </RelativeLayout>

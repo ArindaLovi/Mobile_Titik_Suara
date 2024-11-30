@@ -16,21 +16,22 @@
             android:id="@+id/profileTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="19.5dp"
-            android:layout_marginTop="19.5dp"
-            android:layout_marginEnd="19.5dp"
-            android:layout_marginBottom="59dp"
-            android:text="Profil"
+            android:layout_marginStart="19.50dp"
+            android:layout_marginTop="19.50dp"
+            android:layout_marginEnd="19.50dp"
+            android:layout_marginBottom="19.50dp"
+            android:fontFamily="@font/popmed"
             android:textColor="@color/black"
-            android:textSize="20sp"/>
+            android:textSize="@dimen/_13sdp"
+            android:text="Profil"/>
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/profileTitle"
+            android:layout_marginTop="100.00dp"
             android:orientation="vertical"
             android:background="@drawable/container_login"
-            android:padding="16dp">
+            android:padding="19.50dp"
+            android:layout_height="match_parent">
 
             <FrameLayout
                 android:layout_width="wrap_content"
@@ -63,7 +64,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nama Lengkap"
-                android:textSize="26sp"
+                android:fontFamily="@font/popmed"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:layout_gravity="center_horizontal"
@@ -74,7 +76,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ID Pengguna: -"
-                android:textSize="23sp"
+                android:fontFamily="@font/popmed"
+                android:textSize="14sp"
                 android:textColor="@color/black"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="16dp"/>
@@ -85,7 +88,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:text="Jabatan: -"
-                android:textSize="18sp"
+                android:fontFamily="@font/popmed"
+                android:textSize="14sp"
                 android:textColor="@color/black"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="16dp"/> <!-- Jarak ditambahkan di sini -->
@@ -95,7 +99,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Alamat: -"
-                android:textSize="16sp"
+                android:textSize="14sp"
+                android:fontFamily="@font/popmed"
                 android:textColor="@color/black"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="16dp"/> <!-- Jarak ditambahkan di sini -->
@@ -105,7 +110,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="No Telp: -"
-                android:textSize="18sp"
+                android:textSize="14sp"
+                android:fontFamily="@font/popmed"
                 android:textColor="@color/black"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="16dp"/> <!-- Jarak ditambahkan di sini -->
@@ -115,6 +121,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Ubah Password"
+                android:fontFamily="@font/popmed"
                 android:layout_marginTop="110dp"
                 android:layout_marginBottom="18dp"
                 android:backgroundTint="@color/red"
@@ -126,6 +133,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Keluar"
+                android:fontFamily="@font/popmed"
                 android:drawableStart="@drawable/ic_exit"
                 android:drawablePadding="8dp"
                 android:textColor="@color/red"
